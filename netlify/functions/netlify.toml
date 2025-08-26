@@ -1,0 +1,10 @@
+[build]
+  publish = "public"              # tiny static folder so Netlify is happy
+  functions = "netlify/functions" # where our function lives
+
+# Serve the function at /news-sitemap.xml
+[[redirects]]
+  from = "/news-sitemap.xml"
+  to   = "/.netlify/functions/news-sitemap"
+  status = 200
+  force = true
