@@ -1,5 +1,5 @@
 export async function handler() {
-  const FEED = 'https://www.implicator.ai/rss/';
+  const FEED = 'https://www.implicator.ai/latest/rss/';
   const TWO_DAYS = 1000 * 60 * 60 * 48; // 48 hours
   try {
     const res = await fetch(FEED, {
